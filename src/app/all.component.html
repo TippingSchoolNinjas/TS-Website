@@ -1,0 +1,54 @@
+<div class = "container">
+<div class = "col-xs-12 col-sm-6 col-md-6 col-lg-6">
+<div class = "row">
+
+ <div id="hero_home" class="hero">
+  <div class="parallax">
+    <div class="container-text">
+      <div class="text_middle">
+        <h2>Your next <br><b class="typed-text"></b></h2>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+<div class = "row">
+<div class="btn-group-vertical btn-group-justified btn-class">
+                <div class = "col-sm-12 col-xs-12 col-md-6 col-lg-6">
+                    <button class="btn btn-sm btn-jumbotron">{{option1}}</button>
+                </div>
+                <div class = "col-sm-12 col-xs-12 col-md-6 col-lg-6">
+                    <button class="btn btn-sm btn-jumbotron">{{option2}}</button>
+                </div>                
+            </div>
+</div>
+</div>
+<div class = "popup">   
+<div class = "col-xs-12 col-sm-6 col-md-6 col-lg-6">
+<a  class=" btn-popup" (click)="modal.open()">
+    <img src="../../assets/images/img.png" alt="Play Button">
+</a>
+</div>
+        
+
+   
+
+    <modal [animation]="animation" [keyboard]="keyboard" [backdrop]="backdrop" (onClose)="closed()" (onDismiss)="dismissed()"
+        (onOpen)="opened()" [cssClass]="cssClass" #modal  >
+        <div class="embed-responsive embed-responsive-16by9">
+        <video   autoplay preload="none" controls>
+                    <source src="https://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" type="video/mp4" title="Press play to learn more about Coding Dojo.">
+                </video>
+        </div>
+    </modal>
+</div>
+</div>
+
+    <div class="header_wrapper parallax" data-parallax="scroll"  data-image-src="">
+                    <div id="video_parent">
+                <div id="video_mask"></div>   
+                <video autoplay preload="none" loop="loop">
+                    <source src="http://d11p8zzranqxa6.cloudfront.net/videos/landing_page.mp4" type="video/mp4" title="Press play to learn more about Coding Dojo.">
+                </video>
+            </div>

@@ -1,0 +1,545 @@
+.container-major{
+    background: #ffffff;
+    margin: 0 53px;
+    padding : 56px;
+}
+.mentor-heading{
+    text-align: center;
+    margin-bottom: 50px; 
+    color:#4d4d4d ;
+}
+
+.sub-heading p,h2{
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+    color:#4d4d4d ;
+    line-height: 38px;
+}
+
+.CompanyGrid{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.CompanyGrid-item {
+    width: 160px;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    text-align: center;
+    margin: 20px 0 0;
+}
+.mentors-image{
+text-align: center;
+margin: 20px 0;
+}
+.mentors-image img{
+    width: 66.67%;
+}
+
+.column-heading h2{
+    font-size: 20px !important; 
+    color: #9b9b9b;
+}
+.column-body p{
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #9b9b9b;  
+}
+
+/*Mentor Imgs*/
+
+.MentorFaceGrid-item {
+    padding: 20px;
+    /*width: 16.66667%;*/
+}
+.FlipContainer {
+
+}
+.FlipContainer-flipper {
+    -webkit-transition: 0.6s;
+    /* transition: 0.6s; */
+    -webkit-transform-style: preserve-3d;
+    /* transform-style: preserve-3d; */
+    position: relative;
+}
+.FlipContainer-front {
+    z-index: 2;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+}
+.FlipContainer-back {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transform: rotateY(180deg);
+    /* transform: rotateY(180deg); */
+}
+.MentorFaceGrid-details {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.MentorFaceGrid-name {
+    text-align: center;
+    font-size: 14px;
+    margin-top: auto;
+}
+.MentorFaceGrid-field {
+    text-align: center;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+.MentorFaceGrid-links {
+    margin-top: auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    width: 100%;
+}
+.MentorFaceGrid-links a{
+    color: #9b9b9b;
+}
+body img {
+    max-width: 100%;
+}
+.MentorFaceGrid-item-photo img {
+    display: block;
+    width: 100%;
+}
+.MentorFaceGrid {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+.MentorsIndex-section-title {
+    margin-bottom: 50px;
+    font-size: 36px;
+        text-align: center;
+    font-size: 24px;
+    margin: 0 0 30px;
+
+}
+
+.image_container{
+    margin: 20px 0;
+    text-align: center;
+    text-align: -webkit-center;
+}
+
+
+
+
+
+
+
+	.flip_container{
+                   width: 250px;
+                    height: 250px;
+                         }
+     
+.flip1{
+    -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+                 
+.flip {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+ -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  position: relative;
+  height: 100%;
+ 
+        }
+        
+.flip_front, .flip_back {
+                            -webkit-backface-visibility: hidden;
+                                    backface-visibility: hidden;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                                    }
+.flip_front {
+           -webkit-transform: rotateY(0deg);
+                   transform: rotateY(0deg);
+                   }
+.flip_front img{
+    width: 100%;
+    height: 100%;
+}                   
+.flip_back {
+            -webkit-transform: rotateY(180deg);
+                    transform: rotateY(180deg);
+                  width: 100%;
+                  }
+
+/*Form CSS*/
+.float-label .name,.email {
+  float: left;
+  position: relative;
+  width: 100%;
+  border-bottom: 1px solid #4d4d4d;
+  padding-top: 23px;
+  margin-bottom: 10px;
+}
+.name input,
+.email input{
+  display: block;
+  width: 100%;
+  border: 0;
+  outline: 0;
+  resize: none;
+  height: 40px;
+  font-size: 16px;
+  background-color: #f8f8f8;
+}
+.name input + label,
+.email input + label {
+  position: absolute;
+  top: 10px;
+  /*transition: top 0.7s ease, opacity 0.7s ease;*/
+  transition: .25s cubic-bezier(.25,.8,.25,1);
+  opacity: 0;
+  font-size: 13px;
+  font-weight: 600;
+  color: #ccc;
+}
+.name input:valid + label,
+.email input:valid + label {
+  opacity: 1;
+  top: 3px;
+}
+.name input:focus + label,
+.email input:focus + label {
+  color: #f5791f;
+  /*border-bottom: 1px solid #f5791f;*/
+}
+.form-heading h1{
+    font-size: 32px;
+    max-width: 272px;
+    color: rgb(77, 77, 77); 
+}
+.form-body h3{
+    font-size: 16px;
+    max-width: 272px;
+    color: rgb(77, 77, 77);
+    line-height: 20px;
+}
+.online-mentorship{
+    /*font-size: 36px;*/
+    text-align: center;
+    color: rgb(77, 77, 77);
+}
+.online-mentorship h2{
+    font-size: 36px;
+    line-height: 38px;
+}
+.form-dropdown select{
+        width: 100%;
+    height: 40px;
+    margin-top: 23px;
+    border: 0;
+     border-bottom: 1px solid #4d4d4d; 
+    background-color: #f8f8f8;
+}
+.button{
+    margin-top: 35px;
+    text-align: center;
+}
+.submit-button{
+    width: 150px;
+    border-color: #f5791f;
+        -webkit-box-shadow: 0 0 0 rgba(255, 255, 255, 0.5) inset, 0 0 0 rgba(255, 255, 255, 0.1) inset, 0 4px 0 #b75b18, 0 4px 2px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 0 0 rgba(255, 255, 255, 0.5) inset, 0 0 0 rgba(255, 255, 255, 0.1) inset, 0 4px 0 #b75b18, 0 4px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 0 rgba(255, 255, 255, 0.5) inset, 0 0 0 rgba(255, 255, 255, 0.1) inset, 0 4px 0 #b75b18, 0 4px 2px rgba(0, 0, 0, 0.5);
+    background-color: #f5791f; 
+}
+
+@media screen and (max-width : 359px){
+    .flip_container{
+        height: 125px;
+        width: 125px;
+    }
+    .container-major{
+        margin: 0;
+        padding: 20px;
+    }
+    .FlipContainer {
+        padding: 15px;
+}
+        .CompanyGrid{
+            padding-bottom: 20px;
+        }
+        .mentors-image img{
+        width: 100%;
+}
+        .mentors-image{
+            padding: 0;
+        }
+        .mentor-heading h1{
+            font-size:24px; 
+        }
+        .column-heading h2{
+            text-align: left;
+        }
+        .sub-heading p{
+            font-size: 18px;
+        }
+
+        .container-form{
+            padding: 0 15px;
+        }
+        .form-container{
+        margin: 15px;
+    }
+
+    .online-mentorship h2{
+    font-size: 18px;
+}
+    .form-body h3{
+        padding: 0 15px;
+}
+    .form-heading h1{
+        padding: 0 15px;
+    }
+    .mentors-image{
+        margin: 33px 0;
+}
+                  
+}                  
+@media (min-width : 360px) and (max-width : 480px){
+    .flip_container{
+        height: 150px;
+        width: 150px;
+    }
+    .container-major{
+        margin: 0;
+        padding: 20px;
+    }
+    .FlipContainer {
+        padding: 25px;
+}
+        .CompanyGrid{
+            padding-bottom: 20px;
+        }
+        .column-heading h2{
+            text-align: left;
+        }
+        .mentors-image img{
+        width: 100%;
+}
+        .mentors-image{
+            padding: 0;
+        }
+
+        .container-form{
+            padding: 0 15px;
+        }
+    .form-container{
+        margin: 20px;
+    }
+    
+    
+    .online-mentorship h2{
+    font-size: 24px;
+}
+    .form-body h3{
+        padding: 0 15px;
+}
+    .form-heading h1{
+        padding: 0 15px;
+    }
+    .mentors-image{
+        margin: 33px 0;
+}                 
+}  
+@media (min-width : 481px) and (max-width : 600px){
+    .flip_container{
+        height: 175px;
+        width: 175px;
+    }
+    .container-major{
+        margin: 0;
+        padding: 20px;
+    }
+        .FlipContainer {
+        padding: 40px;
+}
+        .CompanyGrid{
+            padding-bottom: 20px;
+        }
+        .mentors-image img{
+        width: 100%;
+}
+        .column-heading h2{
+            text-align: left;
+        }
+        .mentors-image{
+            padding: 0;
+        }
+
+        .container-form{
+            padding: 0 25px;
+        }
+    .form-container{
+        margin: 25px;
+    }
+    .online-mentorship h2{
+    font-size: 24px;
+}
+    .mentors-image{
+        margin: 33px 0;
+}                  
+}  
+@media (min-width : 601px) and (max-width : 767px){
+    .flip_container{
+        height: 250px;
+        width: 250px;
+    }
+    .container-major{
+        margin: 0;
+        padding: 20px;
+    }
+    .FlipContainer {
+        padding: 40px;
+}
+        .CompanyGrid{
+            padding-bottom: 20px;
+        }
+        .column-heading h2{
+            text-align: left;
+        }
+        .mentors-image img{
+        width: 100%;
+}        
+        .mentors-image{
+            padding-right: 0;
+        }
+        .container-form{
+            padding: 0 50px;
+        }
+    .form-container{
+        margin: 50px;
+    }
+    .online-mentorship h2{
+    font-size: 24px;
+}
+    .mentors-image{
+        margin: 33px 0;
+}                  
+}  
+@media (min-width : 768px) and (max-width : 991px){
+        .container-major{
+        margin: 0;
+        padding: 20px;
+    }
+    .flip_container{
+        height: 225px;
+        width: 225px;
+    }
+        .FlipContainer {
+        padding: 30px;
+}
+        .CompanyGrid{
+            padding-bottom: 20px;
+        }
+        .column-heading h2{
+            text-align: left;
+        }
+        .container-form{
+            padding: 0 50px;
+        }.form-container{
+        margin: 0;
+    }
+    .form-container{
+        margin: 50px;
+    }
+    .online-mentorship h2{
+    font-size: 24px;
+}
+        
+}
+@media (min-width : 992px) and (max-width : 1199px){
+        .container-major{
+        margin: 0;
+        padding: 20px;
+    }
+    .flip_container{
+        height: 250px;
+        width: 250px;
+    }
+        .FlipContainer {
+        padding: 30px;
+}
+        .MentorsIndex-section-title {
+            padding-top: 50px;
+        }
+        .CompanyGrid{
+            padding-bottom: 20px;
+        }
+        .container-form{
+            padding: 0 50px;
+        }
+        .form-container{
+        margin: 50px;
+    }
+        
+}
+@media(min-width:1200px){
+    .form-container{
+        margin: 0;
+    }
+        .online-mentorship{
+            position: relative;
+            top: 200px;
+        }
+}

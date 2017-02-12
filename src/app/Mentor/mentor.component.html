@@ -1,0 +1,190 @@
+<div class = "container-major">
+    <div class = "mentor-heading">
+<h1> Our mentors are experienced</h1>
+        </div>
+    <div class = "sub-heading">
+        <p>Bloc mentors have an average of over 9 years of experience in their field.</p>
+    </div>
+    <div class='CompanyGrid'>
+    <div class='CompanyGrid-item'>
+        <img alt="Google" height="41" src="../../assets/images/google.png" width="124" />
+    </div>
+    <div class='CompanyGrid-item'>
+        <img alt="Apple" height="55" src="../../assets/images/apple.png" width="44" />
+    </div>
+    <div class='CompanyGrid-item'>
+        <img alt="Uber" height="21" src="../../assets/images/uber.png" width="137" />
+    </div>
+    <div class='CompanyGrid-item'>
+        <img alt="Netflix" height="32" src="../../assets/images/netflix.png" width="112" />
+    </div>
+    <div class='CompanyGrid-item'>
+        <img alt="Amazon" height="50" src="../../assets/images/amazon.png" width="118" />
+    </div>
+    <div class='CompanyGrid-item'>
+        <img alt="Heroku" height="42" src="../../assets/images/heroku.png" width="136" />
+    </div>
+    </div>
+        
+
+</div>
+
+    <div class = "container-major" style="background: #fcfcfc;">     
+        <div class = "mentor-heading">
+        <h1>Our mentors give back to the technical community.</h1>
+    </div>
+    <div class = "row">
+        <div class = "col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <div class = "col-lg-12 col-md-12 col-sm-12 col-xs-3 mentors-image">
+                <img src="https://cdn0.bloc.io/assets/landing/mentors/stories/bobbilee-5a3304b01a9091b2b6d1333dec595ae1.jpg" alt="">
+            </div>
+            <div class = "col-lg-12 col-md-12 col-sm-12 col-xs-9">
+                <div class = "column-heading">
+                    <h2>Bobbilee organizes Rails Camp USA West Coast</h2>
+                </div>
+                <div class = "column-body">
+                    <p>Bobbilee continues her passion for mentoring 
+                        by organizing and leading Rails Camp USA West Coast,
+                         a yearly non-traditional unconference for unplugging
+                          and expanding knowledge in the development and design
+                           community.</p>
+                </div>
+            </div>            
+    </div>
+    <div class = "col-lg-4 col-md-4 col-sm-4 col-xs-12 ">
+            <div class = "col-lg-12 col-md-12 col-sm-12 col-xs-3 mentors-image">
+                <img src="https://cdn2.bloc.io/assets/landing/mentors/stories/elliot-9a82f12bf8b58a4c910cfbe28b87438f.jpg" alt="">
+            </div>
+            <div class = "col-lg-12 col-md-12 col-sm-12 col-xs-9">
+                <div class = "column-heading sub-heading">
+                    <h2>Eliot gives back to the open source community</h2>
+                </div>
+                <div class = "column-body">
+                    <p>Eliot contributes to popular repositories,
+                         including Rails and Ember. He also makes screencasts
+                          to help teach experienced frontend developers from 
+                          all over the world under Web Dev Break.</p>
+                </div>
+            </div>            
+    </div>
+    <div class = "col-lg-4 col-md-4 col-sm-4 col-xs-12 ">
+            <div class = "col-lg-12 col-md-12 col-sm-12 col-xs-3 mentors-image">
+                <img src="https://cdn0.bloc.io/assets/landing/mentors/stories/brittany-177c60cc4f89e961c77d4c9998e7566c.jpg" alt="">
+            </div>
+            <div class = "col-lg-12 col-md-12 col-sm-12 col-xs-9">
+                <div class = "column-heading">
+                    <h2>Brittany helps local students at Railsbridge in Pittsburgh</h2>
+                </div>
+                <div class = "column-body">
+                    <p>And passes on the passion for teaching to her students.
+                         Alumni Jake Wengroff says, “I finally got to meet Brittany 
+                         Martin! I was in Pittsburgh last weekend for her Railsbridge 
+                         event, where I served as a TA."</p>
+                </div>
+            </div>            
+    </div>
+    
+    </div>
+    </div>
+<!--Mentor Head-->
+
+<div class='container-major' style="padding: 0">
+    <div class = "MentorsLead">
+<div class='MentorsLead-text'>
+<h1 class='MentorsLead-title'>Leading the way in mentorship.</h1>
+<p class='MentorsLead-subtitle'>Levi Kennedy, Lead Mentor</p>
+<p class='MentorsLead-body'>We’re dedicated to providing our students with the best mentorship experience in the industry. Our Mentorship team is dedicated to helping our mentors improve their craft. Each mentor works with a Lead Mentor to improve their education skills. Just like our students, we never stop learning.</p>
+<div class='MentorsLead-stats'>
+<div class='MentorsLead-stat'>
+<div class='MentorsLead-stat-value'>10+</div>
+<div class='MentorsLead-stat-label'>years of<br> experience</div>
+</div>
+<div class='MentorsLead-stat'>
+<div class='MentorsLead-stat-value'>30+</div>
+<div class='MentorsLead-stat-label'>students<br> with bloc</div>
+</div>
+</div>
+</div>
+<div class='MentorsLead-photo'>
+<img alt="Levi" src="https://cdn2.bloc.io/assets/landing/mentors/levi-7644f6a206c3986e3cd640193e8fc7db.jpg" />
+</div>
+    </div>
+</div>
+
+    <!--MEntor Imgs-->
+
+    
+
+     <div class = "container-major">
+<h1 class='MentorsIndex-section-title AllMentors-title'>Meet our mentor community.</h1>
+<div class='row '>
+        <div *ngFor = "let mentor of mentors" class = "col-lg-4 col-md-4 col-sm-4 col-xs-6 image_container">
+<div class="flip_container">
+    <div class="flip" (click) = "onSelect(mentor)"
+    [class.flip1] = "mentor === selectedMentor">
+<div class="flip_front">
+    <img src="{{mentor.photo}}" width="250" height="250" style="cursor: pointer;"> </div>      
+        <div class="FlipContainer-back " style = "text-align : center;  ">
+ <div class='MentorFaceGrid-details'>
+<div class='MentorFaceGrid-name'>{{mentor.name}}</div>
+<div class='MentorFaceGrid-field'>{{mentor.deg}}</div>
+<div class='MentorFaceGrid-links'>
+    <a  *ngIf = "mentor.in" href="{{mentor.in}}"><i class="fa fa-linkedin"></i> </a>
+    <a  *ngIf = "mentor.github" href="{{mentor.github}}"><i class="fa fa-github"></i> </a>
+    <a  *ngIf = "mentor.twitter" href="{{mentor.twitter}}"><i class="fa fa-twitter"></i> </a>
+    <a  *ngIf = "mentor.link" href="{{mentor.link}}"><i class="fa fa-link"></i> </a>    
+</div>
+
+        </div>
+     </div>
+</div>
+</div>
+</div>
+</div>
+
+    </div>
+        
+<!--Form-->
+
+<div class = "container-major">
+    <div class = "row">
+        <div class = "col-xs-12 col-sm-12 col-md-12 col-lg-6 online-mentorship">
+            <h2>Learn about mentorship at our online info session for our Software Developer Program.</h2>
+        </div>
+        <div class = "col-xs-12 col-sm-12 col-md-12 col-lg-6">
+            <div class = "container-major  form-container" style="background-color: #f8f8f8;">
+                <div class = "row" style="text-align: -webkit-center">
+                    <div class = "form-heading">
+                        <h1>Attend a free online info session</h1>
+                    </div>
+                    <div class = "form-body">
+                        <h3>Get your questions answered
+and find out if Bloc is for you.</h3>
+                    </div>
+                </div>
+                <div class = "row container-form">
+                    <form class="float-label" spellcheck="false">
+                        <div class="name">
+    <input type="text" name="name" placeholder="Enter name here" required />
+    <label for="name">Your Name</label>
+  </div>
+  <div class="email">
+    <input type="text" name="email" placeholder="Enter email here" required />
+    <label for="email">E-Mail Address</label>
+  </div>
+  <div class = "form-dropdown">
+      <select name="date" required>
+          <option value="1">Tue, Jan 17th 6:30 am IST</option>
+          <option value="2">Tue, Jan 17th 10:30 pm IST</option>
+          <option value="3">Mon, Jan 23rd 10:30 pm IST</option>
+      </select>
+  </div>
+  <div class = "button">
+      <button class = "btn btn-default btn-lg submit-button" type="submit">Submit</button>
+  </div>
+                      </form>
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>

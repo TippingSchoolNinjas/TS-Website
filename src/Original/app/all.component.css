@@ -1,0 +1,222 @@
+/*Dynamic-text*/
+
+.hero .container-text{
+    position: relative;
+    z-index: 2;
+    text-align: center;  
+    top : 200px; 
+}
+.hero .container-text .text_middle h2 {
+    color: white;
+    font-size: 3em;
+    height: 120px;
+
+}
+
+.hero .container-text .text_middle h2 b{
+    color: #472f91;
+    font-size: 1.5em;
+}
+
+.btn-class{
+    z-index : 2;
+    position: absolute;
+    top : 450px;
+        border-color: #f5791f;
+}
+
+.btn-jumbotron{
+    width: 100%;
+    height : 75px;
+    margin: 75px 0;
+    background: #f5791f;
+    border-color: #f5791f;
+    color: whitesmoke;
+    border-color: #f5791f;
+    -webkit-box-shadow: 0 0 0 rgba(255, 255, 255, 0.5) inset, 0 0 0 rgba(255, 255, 255, 0.1) inset, 0 4px 0 #b75b18, 0 4px 2px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 0 0 rgba(255, 255, 255, 0.5) inset, 0 0 0 rgba(255, 255, 255, 0.1) inset, 0 4px 0 #b75b18, 0 4px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 0 rgba(255, 255, 255, 0.5) inset, 0 0 0 rgba(255, 255, 255, 0.1) inset, 0 4px 0 #b75b18, 0 4px 2px rgba(0, 0, 0, 0.5);
+    background-color: #f5791f;     
+}
+
+.popup{
+    z-index: 2;
+    position: absolute;
+    top: 432px;
+    right: 85px;;
+}
+
+a img:hover{
+    background: #00a3e4;
+    border-radius: 130px;
+}
+
+.modal-content{
+    top : 75px;
+}
+
+.header_wrapper #video_parent {
+  background: url('http://d11p8zzranqxa6.cloudfront.net/images/home/main_bg_photo.jpg') no-repeat !important;
+  position: absolute;
+  height: inherit;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  /*z-index: 500;*/
+}
+
+.header_wrapper #video_parent #video_mask {
+    width: 100%;
+    height: 100%;
+    background: #272737;
+    position: absolute;
+}
+
+.header_wrapper #video_parent video {
+    display: inline-block;
+    z-index: 400;
+    height: 126%;
+    -webkit-filter: blur(0px) grayscale(1);
+    filter: blur(0px) grayscale(1);
+    opacity: 0.25;
+}
+
+.header_wrapper {
+    background: url(http://d11p8zzranqxa6.cloudfront.net/images/home/main_bg_photo.jpg) no-repeat !important;
+    -webkit-background-size: 100% 764px !important;
+    -moz-background-size: 100% 764px !important;
+    -o-background-size: 100% 764px !important;
+    background-size: 100% 764px !important;
+    background-position: 0 0;
+    height: 764px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.navbar-brand ,.navbar-collapse > ul > li > a{
+    color: whitesmoke;
+}
+
+
+
+
+
+.apply_now_buttons {
+    display: block;
+    right: 70px;
+    left: initial;
+    z-index: 10000;
+    top: 0px;
+}
+
+.apply_now_buttons #Option {
+    background: #06AAE2;
+    color: #fff;
+    display: inline-block;
+    font-family: ProximaNova-Extrabld, tahoma, verdana, arial, sans-serif;
+    padding: 15.5px;
+    text-decoration: none;
+    line-height: 100%;
+    height: 45px;
+    vertical-align: top;
+}
+
+.Option-Margin{
+    margin: 0 0 0 10px;
+}
+
+@media (max-width : 1199px) {
+    .header_wrapper #video_parent{
+        display: none;
+    }
+}
+
+@media (min-width : 768px) and (max-width : 991px) {
+    .hero .container-text .text_middle h2 {
+    font-size: 2.2em;
+
+}
+.hero .container-text .text_middle h2 b{
+font-size: 1.8em;
+}
+    .btn-class{
+        top : 405px;
+    }
+    .btn-jumbotron{
+        margin: 40px 0;
+    }
+    .popup{
+    right : 20px;
+    top: 464px;
+}    
+a img {
+    width: 200px;
+}
+}
+
+@media (min-width : 480px) and (max-width : 767px) {
+    .hero .container-text .text_middle h2 {
+    font-size: 2em;
+
+}
+.hero .container-text .text_middle h2 b{
+font-size: 1.4em;
+}
+.hero .container-text{
+    top : 150px; 
+}
+.btn-class{
+        top : 480px;
+    }
+    .btn-jumbotron{
+        height: 50px;
+        margin: 50px 0 0 0;
+        position: relative;
+        left: 12%;
+        width: 75%;
+    }
+    a img {
+    width: 150px;
+}
+	 .popup{
+    right : 36%;
+    top : 320px;
+}
+.apply_now_buttons {
+    right: 40px;
+} 
+}
+
+@media (min-width : 320px) and (max-width : 479px) {
+    .hero .container-text .text_middle h2 {
+    font-size: 1.5em;
+
+}
+.hero .container-text .text_middle h2 b{
+font-size: 1.3em;
+}
+.hero .container-text{
+    top : 150px; 
+}
+    .btn-class{
+        top : 450px;
+    }
+    .btn-jumbotron{
+        height: 50px;
+        margin: 50px 0 0 0;
+        position: relative;
+        left: 12%;
+        width: 75%;        
+    }   
+    a img {
+    width: 130px;
+}
+ 	.popup{
+    right : 26%;
+    top : 285px;
+} 
+.apply_now_buttons {
+    right: 25px;
+}
+}

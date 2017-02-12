@@ -1,0 +1,188 @@
+  
+#slideshow_block {
+  border-bottom: 3px solid #fff;
+}
+ .carousel_stripes {
+  background: url('http://d11p8zzranqxa6.cloudfront.net/images/home/carousel_stripes_new.png') no-repeat !important;
+  height: 228px;
+  width: 248px;
+  position: absolute;
+  -webkit-transform: translate(0, -35%);
+  transform: translate(0, -35%);
+  z-index: 1000;
+}
+.carousel-inner .item {
+  height: 100%;
+}
+.carousel-caption {
+  background: rgba(30, 30, 42, 0.95);
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: initial;
+  width: 650px;
+  height: 100%;
+  padding: 90px 60px 100px 100px;
+}
+.carousel-caption h3 {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  text-shadow: none;
+  font-size: 30px;
+  line-height: 40px;
+  text-transform: uppercase;
+  font-family: ProximaNovaA-Extrabld, tahoma, verdana, arial, sans-serif;
+}
+.carousel-caption h4 {
+  text-shadow: none;
+  font-family: ProximaNovaA-Light, tahoma, verdana, arial, sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.carousel-caption p {
+  font-size: 18px;
+  margin: 45px 0px 30px;
+  width: 100%;
+}
+.carousel-caption .cta_blue_button {
+  text-shadow: none;
+}
+.carousel-caption-border {
+  position: absolute;
+  height: 100%;
+  display: block;
+  width: 150px;
+  top: 0;
+  left: 650px;
+}
+ .transparent_triangle {
+  display: block;
+  border-left: 235px solid rgba(30, 30, 42, 0.95);
+  border-top: 800px solid transparent;
+  border-bottom: 0px solid transparent;
+  border-right: 0px solid transparent;
+  width: 1px;
+  height: 1px;
+}
+.item img {
+  width: 100%;
+}
+.carousel-indicators li {
+  background: #5C5C66;
+  border: none !important;
+  display: inline-block;
+  width: 24px;
+  height: 8px;
+  margin: 1px;
+  text-indent: -999px;
+  cursor: pointer;
+  border: 1px solid #fff;
+  border-radius: 0px !important;
+  -webkit-border-radius: 0px !important;
+  -moz-border-radius: 0px !important;
+}
+ .carousel-indicators li.active {
+  background: #06AAE2;
+}
+.carousel-control {
+  height: 56px;
+  width: 57px;
+  margin-top: 250px;
+}
+ .carousel-control.left {
+  background: #5d5c6c url('http://d11p8zzranqxa6.cloudfront.net/images/home/carousel_left.png') no-repeat !important;
+}
+ .carousel-control.right {
+  background: #5d5c6c url('http://d11p8zzranqxa6.cloudfront.net/images/home/carousel_right.png') no-repeat !important;
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  #slideshow_block {
+    /* IE10+ CSS styles go here */
+  }
+ .carousel-caption-border {
+    left: 649px !important;
+  }
+}
+@media screen and (max-width: 1279px) {
+  #slideshow_block .carousel-inner .item .item_details .carousel-caption p {
+    margin: 0px;
+  }
+}
+@media screen and (max-width: 1104px) {
+   .carousel_stripes {
+    display: none;
+  }
+ .carousel-inner {
+    background-color: #1E1E2A;
+  }
+.carousel-inner .item .item_details img {
+    height: auto;
+  }
+ .carousel-caption {
+    padding: 20px 100px;
+    position: inherit;
+    min-height: 284px;
+    width: 100%;
+  }
+.carousel-caption p {
+    width: 100%;
+  }
+   .carousel-caption-border {
+    display: none;
+  }
+  #slideshow_block .carousel-indicators {
+    bottom: 0px;
+    display: block;
+  }
+  #slideshow_block .carousel-control {
+    margin-top: 100px;
+  }
+}
+@media screen and (max-width: 720px) {
+ .carousel-caption {
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 640px) {
+.carousel_stripes {
+    display: none;
+  }
+  #slideshow_block .carousel-inner {
+    min-height: 0px;
+    background-color: #1E1E2A;
+  }
+ .carousel-inner .item .item_details img {
+    height: auto;
+  }
+ .carousel-caption {
+    padding: 40px 20px 0px;
+    position: initial;
+    width: 100%;
+  }
+.carousel-caption p {
+    width: 100%;
+  }
+ .carousel-caption-border {
+    display: none;
+  }
+ .carousel-indicators {
+ display: none;
+ }
+    
+    .carousel-control {
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .carousel-caption {
+    padding: 40px 20px 0px 20px;
+  }
+}
+@media screen and (max-width: 329px) {
+.carousel-caption {
+    padding: 40px 20px 0px 20px;
+  }
+.carousel-caption a {
+    width: 100%;
+  }
+}
